@@ -23,15 +23,22 @@ input[type="submit"] {
 
 #hour-input {
   position: relative;
-  right: 14px;
+  right: 45px;
+  bottom: 25px;
+  height: 25px;
 }
 
 #minute-input {
   position: relative;
-  right: 14px;
+  right: 16px;
+  bottom: 25px;
+  height: 25px;
 }
 
 #second-input {
   position: relative;
-  right: 14px;
+  left: 13px;
+  bottom: 25px;
+  height: 25px;
+
 }

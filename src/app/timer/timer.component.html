@@ -2,17 +2,16 @@
   <p>{{this.title}}</p>
   <p>
     <span (click)="stopClock(1)">{{this.hour}}</span>
-    <input id="hour-input" size="2" maxlength="2" [hidden]="this.showHourInput" type="text" [(ngModel)]="this.currentHour"/>
     :
     <span (click)="stopClock(2)">{{this.minute}}</span>
-    <input id="minute-input" size="2" maxlength="2" [hidden]="this.showMinuteInput" type="text" [(ngModel)]="this.currentMinute"/>
     :
     <span (click)="stopClock(3)">{{this.second}}</span>
-    <input id="second-input" size="2" maxlength="2" [hidden]="this.showSecondInput" type="text" [(ngModel)]="this.currentSecond"/>
     &nbsp;
-
     <span>{{this.timeOfDay}}</span>
   </p>
+  <input id="hour-input" size="2" maxlength="2" [hidden]="this.showHourInput" type="text" [(ngModel)]="this.currentHour"/>
+  <input id="minute-input" size="2" maxlength="2" [hidden]="this.showMinuteInput" type="text" [(ngModel)]="this.currentMinute"/>
+  <input id="second-input" size="2" maxlength="2" [hidden]="this.showSecondInput" type="text" [(ngModel)]="this.currentSecond"/>
 
   <input type="submit" [hidden]="isRunning" (click)="startClock()" value="Start"/>
 
